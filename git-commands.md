@@ -29,11 +29,12 @@ git fetch --all
 ```
 
 5. Set reference for current branch and use that for pushing
-```
+
 Set in your bashrc
-
+```
 alias cb="git symbolic-ref --short HEAD"
-
+```
 When pushing code to remote use
+``` 
  git push origin cb
 ```
