@@ -33,8 +33,9 @@ git fetch --all
 Set in your bashrc
 ```
 alias cb="git symbolic-ref --short HEAD"
+alias gpo='git push origin "$(git symbolic-ref --short HEAD)"'
 ```
 When pushing code to remote use
 ``` 
- git push origin cb
+ gpo
 ```
