@@ -12,3 +12,18 @@
 ```
   git checkout <source_branch> -- <filename>
 ```
+
+3. Reset the local branch with pushing it upstream
+```
+git reset --hard <commit>
+git push --force origin branch
+```
+
+4. Git Cherry pick a change
+```
+git cherry-pick <commit>
+
+If you notice bad object errors, make sure local is synced with remote by use
+
+git fetch --all 
+```
